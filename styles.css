@@ -100,6 +100,11 @@ nav {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.hero-name {
+  color: #dc36be;
+  font-weight: 600;
+}
 .subtitle {
   font-size: 1.15rem;
   opacity: 0.95;
