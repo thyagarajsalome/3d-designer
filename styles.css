@@ -105,6 +105,7 @@ nav {
   color: #dc36be;
   font-weight: 600;
 }
+
 .subtitle {
   font-size: 1.15rem;
   opacity: 0.95;
@@ -187,8 +188,9 @@ section {
   font-weight: 300;
 }
 .about-text span {
+  font-size: larger;
   font-weight: 500;
-  color: goldenrod;
+  color: gold;
 }
 
 .stats {
