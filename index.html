@@ -3,274 +3,220 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thyagaraja M | Senior 3D Artist & Visualizer</title>
     <meta
       name="description"
-      content="Thyagaraja M - Senior 3D Artist & Visualizer. Architectural visualization, product rendering, lighting design and web development."
+      content="Thyagaraja M - Senior 3D Artist & Visualizer. Portfolio showcasing architectural visualization, lighting design, and web development."
     />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>3d designer_Lighting</title>
 
-    <!-- Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="floating-elements" aria-hidden="true">
-      <div class="floating-element" style="left: 10%; animation-delay: -5s">
-        🎨
-      </div>
-      <div class="floating-element" style="left: 20%; animation-delay: -10s">
-        💡
-      </div>
-      <div class="floating-element" style="left: 30%; animation-delay: -15s">
-        🏗️
-      </div>
-      <div class="floating-element" style="left: 40%; animation-delay: -20s">
-        🎯
-      </div>
-      <div class="floating-element" style="left: 50%; animation-delay: -25s">
-        ✨
-      </div>
-      <div class="floating-element" style="left: 60%; animation-delay: -30s">
-        🚀
-      </div>
-      <div class="floating-element" style="left: 70%; animation-delay: -35s">
-        💻
-      </div>
-      <div class="floating-element" style="left: 80%; animation-delay: -40s">
-        🎨
-      </div>
-      <div class="floating-element" style="left: 90%; animation-delay: -45s">
-        🌟
-      </div>
-    </div>
-
-    <!-- Header -->
-    <header role="banner">
+    <header class="header" role="banner">
       <div class="container">
-        <nav role="navigation" aria-label="Main Navigation">
-          <div class="logo">Thyagaraja M</div>
-          <ul class="nav-links" role="menubar">
-            <li role="none"><a role="menuitem" href="#home">Home</a></li>
-            <li role="none"><a role="menuitem" href="#about">About</a></li>
-            <li role="none"><a role="menuitem" href="#skills">Skills</a></li>
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+          <a href="#home" class="logo">🏠</a>
+          <ul class="nav-links" id="nav-links" role="menubar">
             <li role="none">
-              <a role="menuitem" href="#experience">Experience</a>
+              <a role="menuitem" href="#home" class="nav-link">Home</a>
             </li>
             <li role="none">
-              <a role="menuitem" href="#portfolio">Portfolio</a>
+              <a role="menuitem" href="#about" class="nav-link">About</a>
             </li>
-            <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+            <li role="none">
+              <a role="menuitem" href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li role="none">
+              <a role="menuitem" href="#experience" class="nav-link"
+                >Experience</a
+              >
+            </li>
+            <li role="none">
+              <a role="menuitem" href="#portfolio" class="nav-link"
+                >Portfolio</a
+              >
+            </li>
+            <li role="none">
+              <a role="menuitem" href="#contact" class="nav-link">Contact</a>
+            </li>
           </ul>
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
         </nav>
       </div>
     </header>
 
-    <!-- Hero -->
     <main>
       <section class="hero" id="home" aria-labelledby="hero-heading">
-        <div class="container">
-          <div class="hero-content" role="region" aria-label="Introduction">
+        <div class="hero-shapes"></div>
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="hero-subtitle">Thyagaraja M</p>
             <h1 id="hero-heading">Sr. 3D Designer</h1>
-            <p class="subtitle">Sr. 3D Designer & Lighting Designer</p>
-            <p class="hero-name">Thyagaraja M</p>
-
-            <div class="contact-info" aria-hidden="false">
-              <div class="contact-item">
-                <i class="fas fa-envelope" aria-hidden="true"></i
-                ><span>thyagarajsalome@gmail.com</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-phone" aria-hidden="true"></i
-                ><span>+91-9113989237</span>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-map-marker-alt" aria-hidden="true"></i
-                ><span>Bangalore, India</span>
-              </div>
-            </div>
-
-            <div class="cta-buttons">
-              <a
-                href="https://3dartist-portfolio.netlify.app/#home"
-                class="btn btn-primary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fas fa-folder-open" aria-hidden="true"></i> View
-                Portfolio
-              </a>
-              <!-- Lighting pro -->
-              <a
-                href="https://lighting-pro.vercel.app/"
-                class="btn btn-primary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fas fa-folder-open" aria-hidden="true"></i>
-                Lighting
+            <p class="hero-description">
+              Transforming creative concepts into stunning, photorealistic
+              visuals for architecture, products, and interactive experiences.
+            </p>
+            <div class="hero-buttons">
+              <a href="#portfolio" class="btn btn-primary">
+                <i class="fas fa-folder-open"></i> View My Work
               </a>
               <a href="#contact" class="btn btn-secondary">
-                <i class="fas fa-envelope" aria-hidden="true"></i> Get In Touch
+                <i class="fas fa-envelope"></i> Get In Touch
               </a>
+            </div>
+          </div>
+          <div class="hero-contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i> thyagarajsalome@gmail.com
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i> +91-9113989237
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i> Bangalore, India
             </div>
           </div>
         </div>
       </section>
 
-      <!-- About -->
       <section class="about" id="about" aria-labelledby="about-heading">
         <div class="container">
           <h2 class="section-title" id="about-heading">About Me 🎨</h2>
-          <div class="about-content">
+          <div class="about-grid">
             <div class="about-text">
               <p>
                 I am a passionate 3D Designer and Lighting Visualization
-                Specialist with over 12 years of experience in diverse creative
-                fields, including Architectural & Interior Design as well as web
-                applications. My career highlights include working on landmark
-                projects such as <span>Dubai Expo 2020</span> and major
-                international theme parks.
+                Specialist with <strong>over 12 years of experience</strong> in
+                diverse creative fields, including Architectural Design,
+                Interior Visualization, and Web Applications.
               </p>
-
               <p>
-                I specialize in creating stunning visualizations that bring
-                ideas to life, combining technical expertise with artistic
-                vision to deliver exceptional results for clients worldwide. I
-                blend traditional craftsmanship with modern render pipelines and
-                often automate repetitive tasks with MaxScript to speed project
-                delivery.
+                My career highlights include working on landmark projects such
+                as <strong>Dubai Expo 2020</strong> and major international
+                theme parks. I blend traditional craftsmanship with modern
+                render pipelines, often automating tasks with MaxScript to
+                enhance efficiency.
               </p>
-              <p class="typing">
+              <p>
                 I also integrate modern technologies, including
-                <span>AI</span>, to elevate design quality and ensure faster,
-                more efficient delivery
+                <strong>AI</strong>, to elevate design quality and ensure
+                faster, more efficient delivery.
               </p>
             </div>
-
-            <div class="stats" aria-hidden="true">
+            <div class="stats">
               <div class="stat-item">
-                <span class="stat-number" data-count="12">0</span>
+                <span class="stat-number" data-count="12">0</span>+
                 <span>Years Experience</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number" data-count="100">0</span>
+                <span class="stat-number" data-count="100">0</span>+
                 <span>Projects Completed</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number" data-count="20">0</span>
-                <span>International Project</span>
+                <span class="stat-number" data-count="20">0</span>+
+                <span>International Projects</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number" data-count="2">0</span>
-                <span>Countries Worked</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number" data-count="10">0</span>
-                <span>Events</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number" data-count="50">0</span>
-                <span>High-end architectural projects</span>
+                <span class="stat-number" data-count="50">0</span>+
+                <span>High-End Archviz</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Skills -->
       <section class="skills" id="skills" aria-labelledby="skills-heading">
         <div class="container">
-          <h2 class="section-title" id="skills-heading" style="color: white">
+          <h2 class="section-title" id="skills-heading">
             Skills & Expertise 💡
           </h2>
           <div class="skills-grid">
-            <div class="skills-chart" aria-hidden="true">
-              <canvas
-                id="skillsChart"
-                width="400"
-                height="400"
-                aria-label="Skills chart"
-              ></canvas>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>3ds Max & V-Ray</span><span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
             </div>
-
-            <div class="skill-bars" aria-hidden="false">
-              <div class="skill-item">
-                <div class="skill-name">
-                  <span>3ds Max</span><span>90%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="90"></div>
-                </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Architectural Visualization</span><span>92%</span>
               </div>
-              <!-- Lighting dsigner -->
-              <div class="skill-item">
-                <div class="skill-name">
-                  <span>Lighting Designer</span><span>80%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="80"></div>
-                </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 92%"></div>
               </div>
-              <!-- 3d MOdeling -->
-              <div class="skill-item">
-                <div class="skill-name">
-                  <span>3D Modeling</span><span>95%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="95"></div>
-                </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>3D Modeling</span><span>90%</span>
               </div>
-              <div class="skill-item">
-                <div class="skill-name">
-                  <span>V-Ray Rendering</span><span>90%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="90"></div>
-                </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
               </div>
-              <div class="skill-item">
-                <div class="skill-name">
-                  <span>AutoCAD</span><span>88%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="88"></div>
-                </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Lighting Design</span><span>88%</span>
               </div>
-              <div class="skill-item">
-                <div class="skill-name">
-                  <span>Photoshop</span><span>85%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="85"></div>
-                </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 88%"></div>
               </div>
-              <div class="skill-item">
-                <div class="skill-name">
-                  <span>Architectural Visualization</span><span>92%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="92"></div>
-                </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Photoshop</span><span>85%</span>
               </div>
-              <div class="skill-item">
-                <div class="skill-name">
-                  <span>Web Development</span><span>60%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="60"></div>
-                </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>AutoCAD</span><span>80%</span></div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Web Development (HTML/CSS/JS)</span><span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>MaxScript Automation</span><span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Experience -->
       <section
         class="experience"
         id="experience"
@@ -282,47 +228,43 @@
           </h2>
           <div class="timeline" role="list">
             <div class="timeline-item" role="listitem">
-              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-dot"></div>
               <div class="timeline-content">
                 <div class="timeline-date">Nov 2022 - Present</div>
                 <h3>Sr. 3D Artist / 3D Visualizer</h3>
                 <h4>Vega Design 🏢</h4>
                 <p>
                   Leading architectural and interior 3D design projects,
-                  creating visualizations and product rendering for e-commerce
-                  platforms.
+                  creating visualizations and product rendering for e-commerce.
                 </p>
               </div>
             </div>
-
             <div class="timeline-item" role="listitem">
-              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-dot"></div>
               <div class="timeline-content">
                 <div class="timeline-date">Sep 2021 - Nov 2022</div>
                 <h3>3D Artist</h3>
                 <h4>Eteam (Client: Lowes India) 🛍️</h4>
                 <p>
-                  Created product-based images for e-commerce and implemented
-                  MaxScript automation for batch rendering.
+                  Created product-based images and implemented MaxScript
+                  automation for batch rendering.
                 </p>
               </div>
             </div>
-
             <div class="timeline-item" role="listitem">
-              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-dot"></div>
               <div class="timeline-content">
                 <div class="timeline-date">Aug 2019 - May 2020</div>
                 <h3>3D Designer</h3>
                 <h4>Dubai Expo 2020 🌍</h4>
                 <p>
-                  Worked on pavilion concept design, 3D modeling, CAD drafting
-                  and thematic lighting elements for an international event.
+                  Worked on pavilion concept design, 3D modeling, CAD drafting,
+                  and thematic lighting elements.
                 </p>
               </div>
             </div>
-
             <div class="timeline-item" role="listitem">
-              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-dot"></div>
               <div class="timeline-content">
                 <div class="timeline-date">Nov 2013 - Jun 2017</div>
                 <h3>3D Designer</h3>
@@ -333,24 +275,10 @@
                 </p>
               </div>
             </div>
-
-            <div class="timeline-item" role="listitem">
-              <div class="timeline-dot" aria-hidden="true"></div>
-              <div class="timeline-content">
-                <div class="timeline-date">Jun 2012 - Nov 2013</div>
-                <h3>Lighting Designer</h3>
-                <h4>LET Lighting Design - Dubai 💡</h4>
-                <p>
-                  Architectural lighting design, concept presentations, and
-                  rendering for lighting applications.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      <!-- Portfolio -->
       <section
         class="portfolio"
         id="portfolio"
@@ -358,223 +286,116 @@
       >
         <div class="container">
           <h2 class="section-title" id="portfolio-heading">Featured Work 🎯</h2>
-          <div class="gallery" role="list">
-            <article class="gallery-item" role="listitem">
-              <div class="gallery-image">
-                <i class="fas fa-building" aria-hidden="true"></i>
-              </div>
-              <div class="gallery-content">
-                <h3 class="gallery-title">Architectural Visualization</h3>
-                <p class="gallery-description">
-                  High-end architectural renderings for residential and
-                  commercial projects — photorealistic output, material fidelity
-                  and post-production.
+          <div class="portfolio-grid" role="list">
+            <a href="#" class="portfolio-card" role="listitem">
+              <div class="card-overlay">
+                <h3 class="card-title">Architectural Visualization</h3>
+                <p class="card-description">
+                  High-end residential and commercial projects.
                 </p>
               </div>
-            </article>
-
-            <article class="gallery-item" role="listitem">
-              <div class="gallery-image">
-                <i class="fas fa-home" aria-hidden="true"></i>
-              </div>
-              <div class="gallery-content">
-                <h3 class="gallery-title">Interior Design</h3>
-                <p class="gallery-description">
-                  Stunning interiors showcasing furniture, lighting and spatial
-                  composition for luxury and hospitality projects.
+            </a>
+            <a href="#" class="portfolio-card" role="listitem">
+              <div class="card-overlay">
+                <h3 class="card-title">Interior Design</h3>
+                <p class="card-description">
+                  Stunning interiors for luxury and hospitality.
                 </p>
               </div>
-            </article>
-
-            <article class="gallery-item" role="listitem">
-              <div class="gallery-image">
-                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
-              </div>
-              <div class="gallery-content">
-                <h3 class="gallery-title">Product Visualization</h3>
-                <p class="gallery-description">
-                  E-commerce product renders for major retailers including
-                  furniture, home decor and lifestyle items.
+            </a>
+            <a href="#" class="portfolio-card" role="listitem">
+              <div class="card-overlay">
+                <h3 class="card-title">Product Visualization</h3>
+                <p class="card-description">
+                  E-commerce product renders for major retailers.
                 </p>
               </div>
-            </article>
-
-            <article class="gallery-item" role="listitem">
-              <div class="gallery-image">
-                <i class="fas fa-lightbulb" aria-hidden="true"></i>
-              </div>
-              <div class="gallery-content">
-                <h3 class="gallery-title">Lighting Design</h3>
-                <p class="gallery-description">
-                  Lighting solutions that enhance architecture and interior mood
-                  via physically-informed setups and photometric data.
+            </a>
+            <a href="#" class="portfolio-card" role="listitem">
+              <div class="card-overlay">
+                <h3 class="card-title">Lighting Design</h3>
+                <p class="card-description">
+                  Enhancing architecture with photometric lighting.
                 </p>
               </div>
-            </article>
-
-            <article class="gallery-item" role="listitem">
-              <div class="gallery-image">
-                <i class="fas fa-star" aria-hidden="true"></i>
-              </div>
-              <div class="gallery-content">
-                <h3 class="gallery-title">Theme Park Design</h3>
-                <p class="gallery-description">
-                  Creative design work for attractions and pavilions with
-                  technical working drawings and theming design.
+            </a>
+            <a href="#" class="portfolio-card" role="listitem">
+              <div class="card-overlay">
+                <h3 class="card-title">Theme Park Design</h3>
+                <p class="card-description">
+                  Creative design for attractions and pavilions.
                 </p>
               </div>
-            </article>
-
-            <article class="gallery-item" role="listitem">
-              <div class="gallery-image">
-                <i class="fas fa-code" aria-hidden="true"></i>
-              </div>
-              <div class="gallery-content">
-                <h3 class="gallery-title">Web Development</h3>
-                <p class="gallery-description">
-                  Responsive web projects combining modern front-end skills to
-                  present 3D work and portfolios online.
+            </a>
+            <a href="#" class="portfolio-card" role="listitem">
+              <div class="card-overlay">
+                <h3 class="card-title">Web Development</h3>
+                <p class="card-description">
+                  Responsive web projects for online portfolios.
                 </p>
               </div>
-            </article>
+            </a>
           </div>
         </div>
       </section>
 
-      <!-- Contact -->
       <section class="contact" id="contact" aria-labelledby="contact-heading">
         <div class="container">
           <h2 class="section-title" id="contact-heading">
             Let's Work Together 🤝
           </h2>
+          <p class="contact-subtitle">
+            Have a project in mind? I'd love to hear from you.
+          </p>
           <div class="contact-grid">
-            <div class="contact-info-section">
-              <div class="contact-item-large">
-                <div class="contact-icon">
-                  <i class="fas fa-envelope" aria-hidden="true"></i>
-                </div>
-                <div>
-                  <h4>Email</h4>
-                  <p>
-                    <a href="mailto:thyagarajsalome@gmail.com"
-                      >thyagarajsalome@gmail.com</a
-                    >
-                  </p>
-                </div>
-              </div>
-
-              <div class="contact-item-large">
-                <div class="contact-icon">
-                  <i class="fas fa-phone" aria-hidden="true"></i>
-                </div>
-                <div>
-                  <h4>Phone</h4>
-                  <p><a href="tel:+919113989237">+91-9113989237</a></p>
-                </div>
-              </div>
-
-              <div class="contact-item-large">
-                <div class="contact-icon">
-                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                </div>
-                <div>
-                  <h4>Location</h4>
-                  <p>Bangalore, Karnataka, India</p>
-                </div>
-              </div>
-
-              <div class="contact-item-large">
-                <div class="contact-icon">
-                  <i class="fas fa-globe" aria-hidden="true"></i>
-                </div>
-                <div>
-                  <h4>Portfolio</h4>
-                  <p>
-                    <a
-                      href="https://3dartist-portfolio.netlify.app/#home"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >View Online Portfolio</a
-                    >
-                  </p>
-                </div>
+            <div class="contact-item-large">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <a href="/index.html"></a>
+                <p>thyagaraja1983</p>
+                <p>@gmail.com</p>
               </div>
             </div>
-
-            <aside class="languages" aria-label="Languages and hobbies">
-              <h3>Languages 🗣️</h3>
-              <div class="language-grid">
-                <div class="language-item">English</div>
-                <div class="language-item">Kannada</div>
-                <div class="language-item">Hindi</div>
+            <div class="contact-item-large">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div class="contact-text">
+                <h4>Phone</h4>
+                <a href="tel:+919113989237">+91-9113989237</a>
               </div>
-
-              <div style="margin-top: 28px">
-                <h3>Hobbies & Interests 🎨</h3>
-                <div
-                  style="
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 10px;
-                    margin-top: 14px;
-                  "
+            </div>
+            <div class="contact-item-large">
+              <div class="contact-icon"><i class="fas fa-globe"></i></div>
+              <div class="contact-text">
+                <h4>Portfolio</h4>
+                <a
+                  href="https://3dartist-portfolio.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View Online</a
                 >
-                  <span
-                    style="
-                      background: linear-gradient(45deg, #667eea, #764ba2);
-                      color: white;
-                      padding: 8px 14px;
-                      border-radius: 20px;
-                      font-weight: 700;
-                    "
-                    >💻 Programming</span
-                  >
-                  <span
-                    style="
-                      background: linear-gradient(45deg, #667eea, #764ba2);
-                      color: white;
-                      padding: 8px 14px;
-                      border-radius: 20px;
-                      font-weight: 700;
-                    "
-                    >🎨 3D Designing</span
-                  >
-                  <span
-                    style="
-                      background: linear-gradient(45deg, #667eea, #764ba2);
-                      color: white;
-                      padding: 8px 14px;
-                      border-radius: 20px;
-                      font-weight: 700;
-                    "
-                    >📚 Reading</span
-                  >
-                </div>
               </div>
-            </aside>
+            </div>
           </div>
         </div>
       </section>
-
-      <!-- Footer -->
-      <footer>
-        <div class="container">
-          <p>
-            &copy; <span id="currentYear"></span> Thyagaraja M — Senior 3D
-            Designer & Visualizer. All rights reserved.
-          </p>
-          <p style="margin-top: 8px; font-size: 0.9rem; opacity: 0.8">
-            Made with passion •
-            <a
-              href="mailto:thyagarajsalome@gmail.com"
-              style="color: #ffd700; text-decoration: none"
-              >Get in touch</a
-            >
-          </p>
-        </div>
-      </footer>
     </main>
 
-    <script src="index.js"></script>
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; <span id="currentYear"></span> Thyagaraja M. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
